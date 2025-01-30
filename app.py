@@ -9,7 +9,7 @@ CORS(app)
 
 # ======== DIRECT API KEYS ========
 GEMINI_API_KEY = "AIzaSyAGCVHr53wr7lAHWlv2I98A-N8Pq3t_zuY"      # Replace with actual key
-STABILITY_API_KEY = "sk-HweHVeSTtJ6SG4a586jdaebfZoYa9AulCuPiLUqZTvee9ALc" # Replace with actual key
+STABILITY_API_KEY = "sk-PWu4E44MsY5jyhSUeUhPKWIvsMeH9Elz0wkq7fz5ALnLpqG6" # Replace with actual key
 # ==================================
 
 # Configure APIs
