@@ -8,8 +8,8 @@ app = Flask(__name__)
 CORS(app)
 
 # ======== DIRECT API KEYS ========
-GEMINI_API_KEY = "AIzaSyAGCVHr53wr7lAHWlv2I98A-N8Pq3t_zuY"      # Replace with actual key
-STABILITY_API_KEY = "sk-PWu4E44MsY5jyhSUeUhPKWIvsMeH9Elz0wkq7fz5ALnLpqG6" # Replace with actual key
+GEMINI_API_KEY = "YOUR-GEMINI-API-KEY"      # Replace with actual key
+STABILITY_API_KEY = "YOUR-STABILITY-API-KEY" # Replace with actual key
 # ==================================
 
 # Configure APIs
@@ -25,7 +25,7 @@ MUSIC_FILES = {
 
 def generate_story(prompt):
     response = text_model.generate_content(
-        f"Split this story into 4 concise comic captions (exactly 4, one per line): {prompt}"
+        f"Split this story into 4 concise comic captions (exactly 4, one per line) don't add the Okay, here are 4 concise comic captions for (prompt) part directly start the story points and dont add point numbers in story points: {prompt}"
     )
     return response.text.split("\n")[:4]
 
